@@ -1,0 +1,495 @@
+<!doctype html><html lang="en"><head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>CRR COLLEGE INSTITUTIONS</title> 
+  <link rel="stylesheet" href="index.css"> 
+  <script src="https://kit.fontawesome.com/85a5986724.js" crossorigin="anonymous">
+</script> 
+ <style type="text/css" id="dcoder_stylesheet">*{
+  margin : 0;
+  padding : 0;
+}
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(college.jpeg);
+  background-position: center;
+  background-size: cover ;
+  position: relative;
+}
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+nav img{
+  width: 100px;
+  
+}
+.nav-links{
+  flex :1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  
+}
+.nav-links ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after{
+  content: "";
+  width:0%;
+  height: 2px;
+  background: darkred;
+  display: block;
+  margin:auto;
+  transition: 0.5s;
+
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+.textbox{
+  width: 90%;
+  color: white;
+  position: absolute ;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  text-align: center;
+}
+.textbox h1{
+  font-size: 62px;
+  
+}
+.textbox p{
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: white;
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: ghostwhite;
+  border :1px solid white;
+  padding :12px 34px;
+  font-size:13px;
+  background:transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover{
+  border: 1px solid indianred;
+  background: indianred;
+  transition: 1s;
+}
+nav .fa{
+  display:none;
+}
+
+@media(max-width: 700px){
+  .textbox h1{
+    font-size: 20px;
+    
+  }
+  .nav-links ul li{
+    display: block;
+    
+  }
+  .nav-links{
+    position: absolute;
+    background: blue;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+  }
+  nav .fa{
+    display: block;
+    color: red;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    
+  }
+  .nav-links ul{
+    padding: 30px;
+  }
+  
+}
+.course{
+  width: 80%;
+  margin:auto;
+  text-align: center;
+  padding-top: 50px;
+}
+h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+p{
+  color: dimgray;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row{
+  margin-top: 5%;
+  justify-content: space-between;
+  display: flex;
+}
+.course-col{
+  flex-basis: 3%;
+  background: lightpink;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px;
+  color: blue;
+}
+
+.course-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width:700px){
+  .row{
+    flex-direction: column;
+  }
+}
+.campus{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.campus-col{
+  flex-basis: 30%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.campus-col img{
+  width: 100%;
+  display: block;
+}
+.layer{
+  background: transparent ;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position:absolute;
+  transition: 0.5s;
+  
+}
+.layer:hover{
+  background: rgba(226,0,0,0.7);
+  
+  
+  
+
+}
+.layer h3{
+  width: 100%;
+  font-weight: 500;
+  color: white;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3{
+  bottom: 49%;
+  opacity :1;
+  
+}
+.facilities {
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   padding-top: 50px;
+}
+.facilities-col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.facilities-col img{
+  width: 100%;
+  border-radius: 10px;
+  
+}
+.facilities-col p{
+  padding: 0;
+  
+}
+.facilities-col h3{
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.feedback{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.feedback-col{
+  flex-basis: 44%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  text-align: left;
+  background: maroon;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+  margin: 10px; 
+}
+.feedback-col img{
+  height :40px;
+  margin-left:5px;
+  margin-right:30px;
+  border-radius: 50%;
+}
+.feedback-col p{
+  padding: 0;
+}
+.feedback-col h4{
+  margin-top: 15px;
+  text-align: left;
+}
+.feedback-col .fa{
+  color: wheat;
+}
+@media(max-width:700){
+  
+.feedback-col img{
+  
+  margin-left:0px;
+  margin-right:15px;
+  
+}
+}
+.cta{
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(register.jpeg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  border-radius: 10px;
+  padding: 100px 0;
+  padding-top: 10px;
+}
+.cta h2{
+  color: white;
+  margin-bottom: 40px;
+  padding: 0;
+}
+@media(max-width:700){
+  .cta h2{
+    font-size: 24px;
+  }
+}
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background-position: center;
+  background-size:cover;
+  background: url(footer.jpeg);
+  color: palegoldenrod;
+}
+
+.footer h3{
+  color:red;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.footer p{
+  color:palegoldenrod;
+}
+.icon .fa{
+  color: red;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 0 18px;
+  
+}</style></head> 
+ <body> 
+  <section class="header"> 
+   <nav> 
+    <a href="index.html"> <img src="logo.jpeg" alt="no img" width="1%" height="1%"> </a> 
+    <div class="nav-links" id="navlinks"> 
+     <i class="fa fa-times" onclick="hideMenu()"></i> 
+     <ul> 
+      <li><a href="index. html">HOME</a></li> 
+      <li><a href="about.html">ABOUT</a></li> 
+      <li><a href="">COURSE</a></li> 
+      <li><a href="">BLOG</a></li> 
+      <li><a href="">CONTACT</a></li> 
+     </ul> 
+    </div> 
+    <i class="fa fa-bars" onclick="showMenu()"></i> 
+   </nav> 
+   <div class="textbox"> 
+    <h1 style="color: goldenrod; ">Sir C.R REDDY COLLEGE INSTITUTIONS</h1> 
+    <p>“Ensuring Quality in Education by providing distinct environment of academic excellence with Social commitment <br> and inculcation of values in young and aspiring minds.” </p> 
+    <a href="https://www.google.com/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://www.indcareer.com/andhra-pradesh/eluru/sir-crr-college-education-eluru&amp;ved=2ahUKEwjbhsH709DyAhVs7HMBHWmmBsMQFnoECEUQAQ&amp;usg=AOvVaw19NdgUNjDA72dBL41ENEw1" class="hero-btn">Visit Us to Know More</a> 
+   </div> 
+  </section> 
+  <section class="course"> 
+   <h1>We Offered Courses </h1> 
+   <p>we offering multiple courses in Inter,UG,B.tech,P.G</p> 
+   <div class="row"> 
+    <div class="course-col"> 
+     <h3>INTER</h3> 
+     <p style="color: black">We Offering MPC,BI.P.C,CEC,HEC,MPHW under Intermediate </p> 
+    </div> 
+    <div class="course-col"> 
+     <h3>UG&amp;B.Tech</h3> 
+     <p style="color: black">WE Offering BSC,B.COM,BA &amp; ECE,CSE,EEE,IT</p> 
+    </div> 
+    <div class="course-col"> 
+     <h3>P.G</h3> 
+     <p style="color: black">WE Offering MCA,MA,MSC,MBA,M.Tech </p> 
+    </div> 
+   </div> 
+  </section> 
+  <section class="campus"> 
+   <h1>Our Branches</h1> 
+   <p> We have women's college,Autonomus college,Engineering college,Polytechnic college etc</p> 
+   <div class="row"> 
+    <div class="campus-col"> 
+     <img src="eng.jpeg" alt="no img"> 
+     <div class="layer"> 
+      <h3>Engineering</h3> 
+     </div> 
+    </div> 
+    <div class="campus-col"> 
+     <img src="poly1.jpeg" alt="no img"> 
+     <div class="layer"> 
+      <h3>Polytechnic</h3> 
+     </div> 
+    </div> 
+    <div class="campus-col"> 
+     <img src="auto.jpeg" alt="no img"> 
+     <div class="layer"> 
+      <h3>Autonomus</h3> 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <section class="facilities"> 
+   <h1>Our Facilities</h1> 
+   <p>We providing Hostel,Lab,Canteen,Gim,facilities in our college </p> 
+   <div class="row"> 
+    <div class="facilities-col"> 
+     <img src="library.jpeg" alt="no img"> 
+     <h3>Central Library</h3> 
+     <p>All type Books are available like<br> Novels,Programming books etc </p> 
+    </div> 
+    <div class="facilities-col"> 
+     <img src="hostel.jpeg" alt="no img"> 
+     <h3>Hostel</h3> 
+     <p>We are providing Healthy food, <br>Mineral water,Hot water..etc </p> 
+    </div> 
+    <div class="facilities-col"> 
+     <img src="lab.jpeg" alt="no img"> 
+     <h3>Lab</h3> 
+     <p>we have limited number of systems <br>for each Block ..</p> 
+    </div> 
+   </div> 
+  </section> 
+  <section class="feedback"> 
+   <h1>Student Words</h1> 
+   <p>The Real Words from Our Students</p> 
+   <div class="row"> 
+    <div class="feedback-col"> 
+     <img src="Saranya.jpg" alt="no img"> 
+     <div> 
+      <p style="color: lightyellow">The gives me alot about responbily and life skills.Really this is good platform.</p> 
+      <h4>Saranya</h4> 
+      <i class="fa fa-star"></i> 
+      <i class="fa fa-star"></i> 
+      <i class="fa fa-star"></i> 
+      <i class="fa fa-star"></i> 
+      <i class="fa fa-star-o"></i> 
+     </div> 
+    </div> 
+    <div class="feedback-col"> 
+     <img src="ravi.jpg" alt="no img"> 
+     <div> 
+      <p style="color: lightyellow">The gives me alot about responbily and life skills.Really this is good platform.</p> 
+      <h4>Ravi</h4> 
+      <i class="fa fa-star"></i> 
+      <i class="fa fa-star"></i> 
+      <i class="fa fa-star"></i> 
+      <i class="fa fa-star"></i> 
+      <i class="fa fa-star-o"></i> 
+     </div> 
+    </div> 
+    <div class="feedback-col"> 
+     <img src="praveen.JPG" alt="no img"> 
+     <div> 
+      <p style="color: lightyellow">The gives me alot about responbily and life skills.Really this is good platform.</p> 
+      <h4>Praveen</h4> 
+      <i class="fa fa-star"></i> 
+      <i class="fa fa-star"></i> 
+      <i class="fa fa-star"></i> 
+      <i class="fa fa-star"></i> 
+      <i class="fa fa-star-o"></i> 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <section class="cta"> 
+   <h2>Register Now</h2> 
+   <h2> <a href="" class="hero-btn">Contact Us</a> </h2> 
+  </section> 
+  <section class="footer"> 
+   <h3>about us</h3> 
+   <p>In this college the extracurricular activities of daily report for the college.the college provides everyone students.</p> 
+   <div class="icon"> 
+    <i class="fa fa-facebook"></i> 
+    <i class="fa fa-instagram"></i> 
+    <i class="fa fa-linkedin"></i> 
+    <i class="fa fa-google"></i> 
+    <i class="fa fa-telegram"></i> 
+   </div> 
+  </section> 
+  <script>
+    var navlinks=document.getElementById("navlinks");
+    function showMenu(){
+      navlinks.style.right="0";
+    }
+    function hideMenu()
+    {
+      navlinks.style.right="-200px";
+    }
+    </script> 
+ 
+</body></html>
